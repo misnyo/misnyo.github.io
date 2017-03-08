@@ -23,8 +23,14 @@ twitter_username: misnyo
 github_username:  misnyo
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
 theme: minima
+kramdown:
+    input: GFM
+    sytnax-highlighter: rouge
+    syntax_highlighter_opts:
+        css_class: 'highlight'
 gems:
   - jekyll-feed
 exclude:
