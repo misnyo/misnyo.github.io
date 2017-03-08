@@ -29,7 +29,7 @@ layout: page
 							<div class="row">
 								<div class="4u 12u$(mobile)">
 									<article class="item">
-										<a href="https://github.com/misnyo" class="image fit" target="_blank"><img src="/images/linux.png" alt="Opensource projects" /></a>
+                                        <a href="https://github.com/{{ site.github_username }}" class="image fit" target="_blank"><img src="/images/linux.png" alt="Opensource projects" /></a>
 										<header>
 											<h3>Opensource projects</h3>
 										</header>
@@ -74,7 +74,7 @@ layout: page
 
 								<div class="3u 12u$(mobile)">
 									<article class="item">
-                                        <a href="https://www.linkedin.com/in/misnyo" class="image fit" target="_blank"><img src="https://www.linkedin.com/mpr/mpr/p/2/005/052/114/1769c5c.jpg" /></a>
+                                        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="image fit" target="_blank"><img src="https://www.linkedin.com/mpr/mpr/p/2/005/052/114/1769c5c.jpg" /></a>
 										<header>
 											<h3>LinkedIn profile</h3>
 										</header>
@@ -110,14 +110,7 @@ layout: page
                                 <h3>+36 70 656 8792</h3>
 							</header>
 
-                        <!-- Social Icons -->
-                            <ul class="icons">
-                                <li><a href="https://www.linkedin.com/in/misnyo" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-                                <li><a href="https://twitter.com/misnyo" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-                                <li><a href="https://github.com/misnyo" class="icon fa-github" target="_blank"><span class="label">Github</span></a></li>
-                                <li><a href="{{ site.url }}" class="icon fa-dribbble"><span class="label">Website</span></a></li>
-                                <li><a href="mailto:{{ site.email }}" class="icon fa-envelope"><span class="label">Email</span></a></li>
-                            </ul>
+                        {% include social.html %}
 
 						</div>
 					</section>
