@@ -3,6 +3,7 @@ layout: blog
 title: Drunk Admin challenge
 date:   2017-03-07 19:30:00 +0100
 categories: itsec
+comments: true
 ---
 
 ## Intro
