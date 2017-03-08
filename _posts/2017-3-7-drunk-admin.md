@@ -133,7 +133,7 @@ anestis@bechtsoudis.com
 ```
 Gotcha. At least we know the message, but not the place. What is this secret code for? Let's try to dig deeper.
 
-## Soltuion
+## Solution
 As we have seen previously, the [mod_userdir](https://httpd.apache.org/docs/2.4/mod/mod_userdir.html) is enabled, which allows users to share their content on the webserver, by creating a directory named public_html in their home directory. What if I'm very greedy, and try to get all the contents of the home directories in the system, by using the php script I used to enumerate the root of the webserver?
 
 So it seems, there is a user called bob, who uses this feature of [Apache](https://httpd.apache.org/). And in the folder /home/bob/public_html, we can find some very interesting content. After trying to input the secret from the previous message to http://192.168.58.101/~bob/, and receiving some garbage, I went through the contents of other php files, eg. encrypt.php. So it seems like bob uses [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) to hide his secret from us. But this code doesn't return any useful answer, and after checking the actual index.php script, the cipher looks like some base64 encoded string. Decoding the secret with base64, and posting to index.php reveals the last information for the secret meeting:
