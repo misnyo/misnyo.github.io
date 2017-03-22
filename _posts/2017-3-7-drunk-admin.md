@@ -6,7 +6,6 @@ categories: itsec
 comments: true
 ---
 
-## Intro
 This walkthrough is about the [Drunk Admin](https://www.vulnhub.com/entry/drunk-admin-web-hacking-challenge-1,14/) challenge, I've found on [Vulnhub](https://www.vulnhub.com/). Just download the zip file, and create a VirtualBox machine from it, and you are ready to go.
 
 ## Recon
